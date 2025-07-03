@@ -1,0 +1,278 @@
+import React from 'react';
+
+const Cbse = () => {
+  return (
+    <div className="min-h-screen bg-white text-gray-800 font-sans leading-relaxed">
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-20px); }
+        }
+        @keyframes spin-slow {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes gradient-shift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        .animate-spin-slow {
+          animation: spin-slow 3s linear infinite;
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient-shift 4s ease infinite;
+        }
+      `}</style>
+      {/* Hero Banner */}
+      <div className="bg-orange-600 text-white text-center py-20 px-5">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          BEST CBSE SCHOOL IN DHOLPUR
+        </h1>
+      </div>
+
+      {/* Intro Section */}
+      <div className="max-w-6xl mx-auto py-8 px-5">
+        <p className="mb-6 text-lg">
+          Are you looking for a top-quality <span className="text-blue-600 font-bold">CBSE School</span> in Dholpur for your child? Look no further—Rishi Galav School Dholpur offers the perfect environment for holistic development, academic excellence, and moral growth. Our mission is to foster curious minds and confident personalities in a nurturing and disciplined atmosphere.
+        </p>
+
+        <p className="mb-6 text-lg">
+          Rishi Galav School, located in the heart of Dholpur, Rajasthan, is a well-regarded institution affiliated with CBSE (Central Board of Secondary Education). With a student-first approach, our curriculum integrates academics, sports, and extracurricular activities to ensure all-round development. From elocution, debates, spelling bees, and art to team sports such as cricket, football, and basketball—we provide abundant opportunities for every child to shine.
+        </p>
+
+        <p className="mb-6 text-lg">
+          Our school is widely recognized for its dedication to academic success and value-based education. As one of the most trusted CBSE schools in Dholpur, we take pride in offering a safe, structured, and encouraging environment where students can grow to their full potential. If you're searching for the <span className="text-blue-600 font-bold">best CBSE school in Dholpur</span>, Rishi Galav School is your destination.
+        </p>
+
+        <p className="mb-6 text-lg">
+          To learn more or to enroll your child, visit us at our Dholpur campus or contact us today. Rishi Galav School — where education meets excellence.
+        </p>
+      </div>
+
+      {/* Benefits Section */}
+      <div className="max-w-6xl mx-auto py-8 px-5">
+        <h2 className="text-3xl text-center text-blue-600 font-bold mb-8">
+          Benefits of Joining Rishi Galav School Dholpur
+        </h2>
+        
+        <div className="mb-10">
+          <p className="mb-6 text-lg">
+            At Rishi Galav School Dholpur, we nurture academic brilliance while also encouraging moral values and real-world skills. Our students are constantly motivated to think critically, explore creatively, and grow confidently. We take immense pride in our lush green campus, well-maintained classrooms, and healthy cafeteria — creating a vibrant learning space for every child.
+          </p>
+          <p className="mb-6 text-lg">
+            Recognized as one of the <span className="text-blue-600 font-bold">top CBSE English medium schools in Dholpur</span>, Rishi Galav School provides a holistic environment for academic and personal development. Our students participate in debates, cultural programs, and team sports that build leadership and resilience. The physical, mental, and emotional well-being of every child is at the heart of everything we do.
+          </p>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
+          <div className="flex-1 lg:flex-initial lg:w-2/5">
+            <div className="w-full h-64 bg-gradient-to-br from-blue-300 to-purple-400 rounded-lg flex items-center justify-center overflow-hidden relative group hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+              <div className="text-center z-10">
+                <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-full flex items-center justify-center animate-bounce">
+                  <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold animate-pulse">School Group Photo</span>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 lg:w-3/5">
+            <h2 className="text-3xl text-blue-600 font-bold mb-4">About Rishi Galav School</h2>
+            <p className="mb-4 text-lg">
+              Rishi Galav School Dholpur is a leading educational institution that combines academic excellence with strong ethical values. Our aim is to cultivate responsible citizens who are confident, kind, and capable of shaping the future. We believe in fostering a spirit of inquiry, discipline, and patriotism in our students.
+            </p>
+            <p className="text-lg">
+              As one of the <span className="text-blue-600 font-bold">best CBSE schools in Rajasthan</span>, we offer a unique learning journey that blends traditional wisdom with modern tools. With an emphasis on experiential learning, entrepreneurship, and innovation, our students go on to excel in academics and life.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CBSE Curriculum Features */}
+      <div className="py-12 bg-blue-50">
+        <h2 className="text-3xl text-center text-blue-600 font-bold mb-8">
+          CBSE Curriculum Features
+        </h2>
+        <div className="max-w-6xl mx-auto px-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">National Curriculum</h3>
+              <p className="text-gray-700">CBSE curriculum ensures uniform education standards across India, making it easier for students to adapt when relocating.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">Competitive Exam Preparation</h3>
+              <p className="text-gray-700">Our CBSE curriculum is designed to prepare students for national competitive exams like JEE, NEET, and UPSC.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">Skill Development</h3>
+              <p className="text-gray-700">Focus on practical knowledge, critical thinking, and skill development alongside theoretical learning.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">Continuous Assessment</h3>
+              <p className="text-gray-700">CCE (Continuous and Comprehensive Evaluation) system ensures holistic development and reduces exam stress.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">Digital Learning</h3>
+              <p className="text-gray-700">Integration of technology and digital resources to enhance learning experience and prepare students for the future.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">Research & Innovation</h3>
+              <p className="text-gray-700">Encouraging students to participate in science fairs, research projects, and innovation challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Branches Section */}
+      <div className="py-12 bg-gray-50">
+        <h2 className="text-3xl text-center text-blue-600 font-bold mb-8">
+          Our CBSE School Branches
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 px-5">
+          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div className="w-full h-44 bg-gradient-to-br from-green-400 to-blue-500 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-red-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="text-center z-10">
+                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-spin-slow">
+                  <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold">Nimera Branch</span>
+              </div>
+            </div>
+            <p className="font-semibold text-lg">Nimera Dholpur</p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div className="w-full h-44 bg-gradient-to-br from-purple-400 to-pink-500 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="text-center z-10">
+                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-pulse">
+                  <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold">Baseri Branch</span>
+              </div>
+            </div>
+            <p className="font-semibold text-lg">Baseri Dholpur</p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div className="w-full h-44 bg-gradient-to-br from-red-400 to-yellow-500 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="text-center z-10">
+                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-bounce">
+                  <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold">Rajakhera Branch</span>
+              </div>
+            </div>
+            <p className="font-semibold text-lg">Rajakhera Dholpur</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Team Section */}
+      <div className="py-12">
+        <h2 className="text-3xl text-center text-blue-600 font-bold mb-8">Our Team</h2>
+        <div className="flex flex-wrap justify-center gap-6 px-5">
+          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div className="w-full h-44 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-orange-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="text-center z-10">
+                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-spin-slow">
+                  <svg className="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold">Principal</span>
+              </div>
+            </div>
+            <p className="font-semibold text-lg">
+              Mrs. Sapna Verma<br />
+              <span className="text-gray-600">Principal</span>
+            </p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div className="w-full h-44 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="text-center z-10">
+                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-pulse">
+                  <svg className="w-8 h-8 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold">Director</span>
+              </div>
+            </div>
+            <p className="font-semibold text-lg">
+              Dr. Pankaj Tyagi<br />
+              <span className="text-gray-600">Director</span>
+            </p>
+          </div>
+          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div className="w-full h-44 bg-gradient-to-br from-rose-400 to-pink-600 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-red-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="text-center z-10">
+                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-bounce">
+                  <svg className="w-8 h-8 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <span className="text-white font-semibold">Coordinator</span>
+              </div>
+            </div>
+            <p className="font-semibold text-lg">
+              Academic Coordinator
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Why Best Section */}
+      <div className="py-12 bg-gray-50">
+        <h2 className="text-3xl text-center text-blue-600 font-bold mb-8">
+          Why Rishi Galav School Dholpur Is Best CBSE School
+        </h2>
+        <div className="max-w-4xl mx-auto px-5">
+          <p className="mb-6 text-lg text-justify">
+            Rishi Galav School Dholpur is widely recognized for providing top-tier CBSE education in a nurturing and disciplined environment. We combine academic rigor with moral values to ensure holistic growth for every child. Our branches in Nimera, Baseri, and Rajakhera offer students easy access to high-quality CBSE education close to home.
+          </p>
+          <p className="text-lg text-justify">
+            As a top CBSE English Medium School in Dholpur, we focus on character-building, innovation, and leadership through a variety of curricular and extracurricular activities. We are committed to creating an environment where students can thrive intellectually, emotionally, and socially — preparing them to become responsible citizens of tomorrow and excel in national competitive examinations.
+          </p>
+        </div>
+      </div>
+
+      {/* Contact Section */}
+      <div className="py-12 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto px-5 text-center">
+          <h2 className="text-3xl font-bold mb-6">Join the Best CBSE School in Dholpur</h2>
+          <p className="text-lg mb-6">
+            Give your child the advantage of CBSE education with Rishi Galav School's proven track record of academic excellence and holistic development.
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Enquire Now
+            </button>
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+              Schedule Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cbse;
