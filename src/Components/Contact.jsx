@@ -292,7 +292,7 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Phone</h4>
-                    <p className="text-gray-600">+91-XXXXX-XXXXX</p>
+                    <p className="text-gray-600">+91-9414053848</p>
                     <p className="text-gray-600">+91-XXXXX-XXXXX</p>
                   </div>
                 </div>
@@ -306,7 +306,7 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Email</h4>
-                    <p className="text-gray-600">info@rishigalavschool.com</p>
+                    <p className="text-gray-600">rgcs2013@gmail.com</p>
                     <p className="text-gray-600">admission@rishigalavschool.com</p>
                   </div>
                 </div>
@@ -333,27 +333,17 @@ const ContactUs = () => {
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-semibold text-blue-600 mb-2">Nimera Branch</h4>
-                  <p className="text-gray-600">Nimera, Dholpur, Rajasthan</p>
-                  <p className="text-sm text-gray-500">Phone: +91-XXXXX-XXXXX</p>
+                  <h4 className="font-semibold text-blue-600 mb-2"> Doon Ka Pura Branch</h4>
+                  <p className="text-gray-600"> Doon Ka Pura, Dholpur, Rajasthan</p>
+                  <p className="text-sm text-gray-500">Phone: +91-9414053848</p>
                 </div>
                 
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-semibold text-blue-600 mb-2">Baseri Branch</h4>
-                  <p className="text-gray-600">Baseri, Dholpur, Rajasthan</p>
-                  <p className="text-sm text-gray-500">Phone: +91-XXXXX-XXXXX</p>
-                </div>
-                
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-semibold text-blue-600 mb-2">Rajakhera Branch</h4>
-                  <p className="text-gray-600">Rajakhera, Dholpur, Rajasthan</p>
-                  <p className="text-sm text-gray-500">Phone: +91-XXXXX-XXXXX</p>
-                </div>
+              
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-600">
+            {/* <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-green-600">
               <h3 className="text-2xl font-bold text-green-600 mb-4">
                 Quick Links
               </h3>
@@ -371,7 +361,7 @@ const ContactUs = () => {
                   Facilities
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -411,23 +401,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="py-12 bg-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-5 text-center">
-          <h2 className="text-3xl font-bold mb-4">Contact Us Today</h2>
-          <p className="text-lg mb-6">
-            Enroll your child in the Best RBSE School in Dholpur
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Call +91-XXXXX-XXXXX
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Schedule School Visit
-            </button>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 };

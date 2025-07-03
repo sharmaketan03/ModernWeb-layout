@@ -231,7 +231,7 @@ const CareerPage = () => {
       <div className="bg-gradient-to-r from-orange-600 to-orange-500 text-white text-center py-20 px-5 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-float">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 ">
             JOIN OUR TEAM
           </h1>
           <p className="text-xl md:text-2xl opacity-90 mb-6">
@@ -557,7 +557,7 @@ const CareerPage = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Phone</h3>
-              <p className="text-gray-600">+91 XXXXX XXXXX</p>
+              <p className="text-gray-600">+91-9414053848</p>
               <p className="text-sm text-gray-500 mt-1">Mon-Fri: 9:00 AM - 5:00 PM</p>
             </div>
             <div className="text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
@@ -568,7 +568,7 @@ const CareerPage = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Email</h3>
-              <p className="text-gray-600">careers@rishigalavschool.com</p>
+              <p className="text-gray-600">rgcs2013@gmail.com</p>
               <p className="text-sm text-gray-500 mt-1">Response within 24 hours</p>
             </div>
             <div className="text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">

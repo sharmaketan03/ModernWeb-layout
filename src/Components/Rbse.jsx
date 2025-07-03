@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Rbsesect from "../assets/rishi8.jpg"
 const Rbse = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans leading-relaxed">
@@ -73,7 +73,9 @@ const Rbse = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           <div className="flex-1 lg:flex-initial lg:w-2/5">
             <div className="w-full h-64 bg-gradient-to-br from-blue-300 to-purple-400 rounded-lg flex items-center justify-center overflow-hidden relative group hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-70 group-hover:opacity-20 transition-opacity duration-500">
+                <img src={Rbsesect} alt="" />
+              </div>
               <div className="text-center z-10">
                 <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-full flex items-center justify-center animate-bounce">
                   <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
@@ -147,12 +149,12 @@ const Rbse = () => {
                     <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
                   </svg>
                 </div>
-                <span className="text-white font-semibold">Nimera Branch</span>
+                <span className="text-white font-semibold">Doon Ka Pura Branch</span>
               </div>
             </div>
-            <p className="font-semibold text-lg">Nimera Dholpur</p>
+            <p className="font-semibold text-lg">Doon Ka Pura, Dholpur</p>
           </div>
-          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          {/* <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
             <div className="w-full h-44 bg-gradient-to-br from-purple-400 to-pink-500 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
               <div className="text-center z-10">
@@ -165,8 +167,8 @@ const Rbse = () => {
               </div>
             </div>
             <p className="font-semibold text-lg">Baseri Dholpur</p>
-          </div>
-          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          </div> */}
+          {/* <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
             <div className="w-full h-44 bg-gradient-to-br from-red-400 to-yellow-500 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
               <div className="text-center z-10">
@@ -179,66 +181,11 @@ const Rbse = () => {
               </div>
             </div>
             <p className="font-semibold text-lg">Rajakhera Dholpur</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      {/* Team Section */}
-      <div className="py-12">
-        <h2 className="text-3xl text-center text-blue-600 font-bold mb-8">Our Team</h2>
-        <div className="flex flex-wrap justify-center gap-6 px-5">
-          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-            <div className="w-full h-44 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-orange-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
-              <div className="text-center z-10">
-                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-spin-slow">
-                  <svg className="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
-                  </svg>
-                </div>
-                <span className="text-white font-semibold">Principal</span>
-              </div>
-            </div>
-            <p className="font-semibold text-lg">
-              Mrs. Sapna Verma<br />
-              <span className="text-gray-600">Principal</span>
-            </p>
-          </div>
-          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-            <div className="w-full h-44 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
-              <div className="text-center z-10">
-                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-pulse">
-                  <svg className="w-8 h-8 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
-                  </svg>
-                </div>
-                <span className="text-white font-semibold">Director</span>
-              </div>
-            </div>
-            <p className="font-semibold text-lg">
-              Dr. Pankaj Tyagi<br />
-              <span className="text-gray-600">Director</span>
-            </p>
-          </div>
-          <div className="bg-blue-50 p-6 rounded-lg text-center w-64 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-            <div className="w-full h-44 bg-gradient-to-br from-rose-400 to-pink-600 rounded-md mb-4 flex items-center justify-center overflow-hidden relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-red-500 opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
-              <div className="text-center z-10">
-                <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-full flex items-center justify-center animate-bounce">
-                  <svg className="w-8 h-8 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
-                  </svg>
-                </div>
-                <span className="text-white font-semibold">Coordinator</span>
-              </div>
-            </div>
-            <p className="font-semibold text-lg">
-              Academic Coordinator
-            </p>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Why Best Section */}
       <div className="py-12 bg-gray-50">
@@ -255,23 +202,7 @@ const Rbse = () => {
         </div>
       </div>
 
-      {/* Contact Section */}
-      <div className="py-12 bg-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-5 text-center">
-          <h2 className="text-3xl font-bold mb-6">Join the Best RBSE School in Dholpur</h2>
-          <p className="text-lg mb-6">
-            Give your child the advantage of quality RBSE education with Rishi Galav School's proven track record of academic excellence and cultural values.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Enquire Now
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Schedule Visit
-            </button>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import student from "../assets/students.jpg"
 
 const WelcomeSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -64,7 +65,7 @@ const WelcomeSection = () => {
                 <div className="relative">
                   <div className="bg-white p-4 rounded-lg shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
                     <img 
-                      src="/api/placeholder/500/350" 
+                      src={student}
                       alt="Students playing chess" 
                       className="w-full h-80 object-cover rounded-lg"
                     />

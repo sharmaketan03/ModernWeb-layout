@@ -1,5 +1,12 @@
 import { Eye, Target, Star, User, Award, Briefcase } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from "framer-motion";
+import Director from "../assets/Director.jpeg"
+import principal from "../assets/Principal.jpeg"
+// import DeepakImg from "../assets/deepak.jpg";
+// import VaibhavImg from "../assets/vaibhav.jpg";
+// import KavitaImg from "../assets/kavita.jpg";
+
 
 export default function ModernSchoolContent() {
   const [activeTab, setActiveTab] = useState('perspective');
@@ -135,158 +142,59 @@ export default function ModernSchoolContent() {
 
         {/* Our Management Tab Content */}
         {activeTab === 'management' && (
-          <div className="space-y-12">
-            {/* Management Team Header */}
-            <div className="text-center">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Management Team</h2>
-              <p className="text-gray-600 max-w-3xl mx-auto">
-                Meet our experienced leadership team committed to providing excellence in education and nurturing future leaders.
-              </p>
-            </div>
+          
+// Paste inside your JSX render return or page body:
+<div className="px-4 py-12 max-w-6xl mx-auto space-y-12">
 
-            {/* Management Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              
-              {/* Principal */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                    alt="Dr. Rajesh Kumar" 
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-600 to-transparent p-6">
-                    <h3 className="text-xl font-bold text-white">Dr. Rajesh Kumar</h3>
-                    <p className="text-blue-100">Principal</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    With over 25 years of experience in education, Dr. Kumar leads our institution with vision and dedication to academic excellence.
-                  </p>
-                  <div className="mt-4">
-                    <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Ph.D. Education</span>
-                  </div>
-                </div>
-              </div>
+ 
 
-              {/* Vice Principal */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1494790108755-2616c9c6b8a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                    alt="Mrs. Priya Sharma" 
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-green-600 to-transparent p-6">
-                    <h3 className="text-xl font-bold text-white">Mrs. Priya Sharma</h3>
-                    <p className="text-green-100">Vice Principal</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    An accomplished educator with expertise in curriculum development and student welfare programs.
-                  </p>
-                  <div className="mt-4">
-                    <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">M.Ed</span>
-                  </div>
-                </div>
-              </div>
+  {/* 2. Mr. Pankaj Tyagi (reversed) */}
+  <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+    viewport={{ once: true }}
+    className="bg-white shadow-md rounded-lg flex flex-col md:flex-row-reverse overflow-hidden"
+  >
+    <div className="w-full md:w-1/3 h-64 md:h-auto">
+      <img src={Director} alt="Mr. Vaibhav Singh" className="w-full h-full object-cover" />
+    </div>
+    <div className="w-full md:w-2/3 p-6 flex flex-col justify-center space-y-3">
+      <h3 className="text-xl font-bold text-orange-600">Mr. Pankaj Tyagi</h3>
+      <p className="text-sm font-semibold text-gray-600">Director</p>
+      <blockquote className="italic text-lg text-gray-800">
+        "The journey is what brings us happiness not the destination."
+      </blockquote>
+      <p className="text-gray-600 text-sm">
+        There is no affront to yourself or others in dropping it...
+      </p>
+    </div>
+  </motion.div>
 
-              {/* Academic Director */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                    alt="Mr. Amit Gupta" 
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-600 to-transparent p-6">
-                    <h3 className="text-xl font-bold text-white">Mr. Amit Gupta</h3>
-                    <p className="text-purple-100">Academic Director</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Specializes in innovative teaching methodologies and technology integration in education.
-                  </p>
-                  <div className="mt-4">
-                    <span className="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">M.A. Education</span>
-                  </div>
-                </div>
-              </div>
+  {/* 3. Ms. Anjali Maheshwari */}
+  <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.4 }}
+    viewport={{ once: true }}
+    className="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden"
+  >
+    <div className="w-[262px] h-[350px] md:w-1/3  md:h-auto">
+      <img src={principal} alt="Ms. Kavita Bainsla" className="w-full h-full object-cover" />
+    </div>
+    <div className="w-full md:w-2/3 p-6 flex flex-col justify-center space-y-3">
+      <h3 className="text-xl font-bold text-orange-600"> Ms. Anjali Maheshwari</h3>
+      <p className="text-sm font-semibold text-gray-600">Principal</p>
+      <blockquote className="italic text-lg text-gray-800">
+        "Greatness is simply defined as the ability to believe in yourself."
+      </blockquote>
+      <p className="text-gray-600 text-sm">
+        We, here at Modern School aspire to create sympathy in the hearts of its young pupils...
+      </p>
+    </div>
+  </motion.div>
+</div>
 
-              {/* Sports Director */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                    alt="Coach Ravi Singh" 
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-orange-600 to-transparent p-6">
-                    <h3 className="text-xl font-bold text-white">Coach Ravi Singh</h3>
-                    <p className="text-orange-100">Sports Director</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Former national athlete with passion for developing sports culture and physical fitness among students.
-                  </p>
-                  <div className="mt-4">
-                    <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded">B.P.Ed</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Finance Head */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                    alt="Mrs. Sunita Agarwal" 
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-red-600 to-transparent p-6">
-                    <h3 className="text-xl font-bold text-white">Mrs. Sunita Agarwal</h3>
-                    <p className="text-red-100">Finance Head</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Chartered Accountant ensuring transparent financial management and resource optimization.
-                  </p>
-                  <div className="mt-4">
-                    <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">CA, MBA</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* IT Head */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                    alt="Mr. Vikash Jain" 
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-indigo-600 to-transparent p-6">
-                    <h3 className="text-xl font-bold text-white">Mr. Vikash Jain</h3>
-                    <p className="text-indigo-100">IT Head</p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Technology expert leading digital transformation and smart classroom initiatives.
-                  </p>
-                  <div className="mt-4">
-                    <span className="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">B.Tech, MCA</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
         )}
 
       </div>
@@ -314,23 +222,7 @@ export default function ModernSchoolContent() {
         </div>
       </div>
 
-      {/* Footer CTA Section */}
-      <div className="bg-gray-900 text-white py-12 animate-fadeInUp-delay-4">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Join Our School Community</h2>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Discover excellence in education with our comprehensive programs designed to nurture young minds and build future leaders.
-          </p>
-          <div className="space-x-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition">
-              Apply for Admission
-            </button>
-            <button className="border border-white text-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg font-medium transition">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
+    
     </div>
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Acdemics from "../assets/rgcs10.jpg"
 export default function AcademicsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -66,7 +66,7 @@ export default function AcademicsSection() {
               }`}
             >
               <img
-                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src={Acdemics}
                 alt="Teacher engaging with children in classroom"
                 className="w-full h-full object-cover"
                 onLoad={() => setImageLoaded(true)}
