@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Menu, X, Facebook, Instagram } from 'lucide-react';
-import Logo from "../assets/logo1.jpeg";
+// import Logo from "../assets/logo1.jpeg";
 import LogoName from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
 

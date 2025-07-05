@@ -1,5 +1,5 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React, { useEffect } from "react";
+import { createBrowserRouter, RouterProvider, useNavigate } from "react-router-dom";
 import ModernSchoolHomepage from "./ModernSchoolHomepage";
 import ModernSchoolContent from "./About";
 import First from "./First";
@@ -7,6 +7,7 @@ import Rbse from "./Rbse"
 import Cbse from "./Cbse";
 import Contact from "./Contact"
 import CareerPage from "./Careerpage";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
 ]);
 
 function Router() {
+ 
   return <RouterProvider router={router} />;
 }
 
