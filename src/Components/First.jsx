@@ -7,7 +7,10 @@ import { useNavigate } from "react-router-dom";
 function First() {
   const navigate=useNavigate()
   useEffect(()=>{
+     const navType=performance.getEntriesByType('navigation')[0]?.type
+     if(navType=='reload'){
       navigate('/')
+     }
   },[])
   return (
     <div>
