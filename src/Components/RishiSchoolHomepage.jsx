@@ -4,7 +4,7 @@ import Logo from "../assets/logo.jpeg"
 import WelcomeSection from './WelcomeSection';
 import AcademicsSection from './AcademicsSection';
 
-const ModernSchoolHomepage = () => {
+const RishiSchoolHomepage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const ModernSchoolHomepage = () => {
             }`}>
               <img 
                 src={frontimg}
-                alt="Modern School Building" 
+                alt="Rishi Galav School Building" 
                 className="w-full h-96 lg:h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-transparent"></div>
@@ -94,7 +94,7 @@ const ModernSchoolHomepage = () => {
       </main>
 
       {/* Floating Action Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-6 right-12 z-50 w-full">
         <button className="w-14 h-14 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full shadow-lg flex items-center justify-center text-white transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 animate-pulse">
           {/* Phone icon can go here */}
         </button>
@@ -105,4 +105,4 @@ const ModernSchoolHomepage = () => {
   );
 };
 
-export default ModernSchoolHomepage;
+export default RishiSchoolHomepage;

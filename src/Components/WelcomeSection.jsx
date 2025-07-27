@@ -107,14 +107,14 @@ const WelcomeSection = () => {
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}>
                   WELCOME TO 
-                  <span className="block text-gray-900 mt-2">MODERN SCHOOL</span>
+                  <span className="block text-gray-900 mt-2">Rishi Galav School</span>
                 </h1>
                 
                 {/* Description */}
                 <p className={`text-gray-600 text-[18px] lg:text-[18px] leading-relaxed mb-10 transform transition-all duration-1000 delay-700 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}>
-                  Modern School gives its students an extraordinary education, 
+                  Rishi Galav School gives its students an extraordinary education, 
                   anchored in timeless values. We empower children to develop into 
                   citizens who live lives of purpose and distinction.
                 </p>

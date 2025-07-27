@@ -70,23 +70,32 @@ const Rbse = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
-          <div className="flex-1 lg:flex-initial lg:w-2/5">
-            <div className="w-full h-64 bg-gradient-to-br from-blue-300 to-purple-400 rounded-lg flex items-center justify-center overflow-hidden relative group hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-70 group-hover:opacity-20 transition-opacity duration-500">
-                <img src={Rbsesect} alt="" />
-              </div>
-              <div className="text-center z-10">
-                <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-full flex items-center justify-center animate-bounce">
-                  <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-                    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
-                  </svg>
-                </div>
-                <span className="text-white font-semibold animate-pulse">School Group Photo</span>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col lg:flex-row gap-8 items-start w-full">
+         <div className="w-full lg:w-2/5 sm:w-full">
+             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden group transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 sm:w-full">
+               
+               {/* Image */}
+               <img
+                 src={Rbsesect}
+                 alt="School Group"
+                 className="w-full h-full object-cover absolute inset-0 z-0"
+               />
+         
+               {/* Gradient Overlay */}
+               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-70 group-hover:opacity-20 transition-opacity duration-500 z-10" />
+                
+               {/* Text Content */}
+               <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                 <div className="w-20 h-20 mb-4 bg-white rounded-full flex items-center justify-center animate-bounce">
+                   <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                     <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                   </svg>
+                 </div>
+                 <span className="font-semibold animate-pulse">School Group Photo</span>
+               </div>
+             </div>
+           </div>
           <div className="flex-1 lg:w-3/5">
             <h2 className="text-3xl text-blue-600 font-bold mb-4">About Rishi Galav School</h2>
             <p className="mb-4 text-lg">

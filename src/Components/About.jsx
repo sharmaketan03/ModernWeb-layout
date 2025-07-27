@@ -8,7 +8,7 @@ import principal from "../assets/Principal.jpeg"
 // import KavitaImg from "../assets/kavita.jpg";
 
 
-export default function ModernSchoolContent() {
+export default function RishiSchoolContent() {
   const [activeTab, setActiveTab] = useState('perspective');
 
   return (
@@ -132,7 +132,7 @@ export default function ModernSchoolContent() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Core Values</h3>
               <p className="text-gray-600 leading-relaxed">
-                We stress on instilling a strong value system in each student. This helps them grow into individuals of excellent character who make valuable contribution to the society. Modern School is making a sincere attempt to introduce a new-age education - an Educational Milieu that harmonizes technological advancements and humanistic wisdom with a special focus on{' '}
+                We stress on instilling a strong value system in each student. This helps them grow into individuals of excellent character who make valuable contribution to the society. Rishi Galav School is making a sincere attempt to introduce a new-age education - an Educational Milieu that harmonizes technological advancements and humanistic wisdom with a special focus on{' '}
                 <span className="font-semibold">'Human Engineering'</span>
               </p>
             </div>
@@ -189,7 +189,7 @@ export default function ModernSchoolContent() {
         "Greatness is simply defined as the ability to believe in yourself."
       </blockquote>
       <p className="text-gray-600 text-sm">
-        We, here at Modern School aspire to create sympathy in the hearts of its young pupils...
+        We, here at Rishi Galav School aspire to create sympathy in the hearts of its young pupils...
       </p>
     </div>
   </motion.div>
