@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SearchResult from './SearchResult';
+import '../App.css'
 const RBSEResultsPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedYear, setSelectedYear] = useState('2024');

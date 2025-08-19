@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Header = ({ isVisible }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+      
   return (
     <>
       <style>{`
@@ -224,7 +224,7 @@ const Header = ({ isVisible }) => {
 
               {/* RBSE with Dropdown */}
               <li className={`dropdown-parent transition-all duration-500 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                <Link to="/Rbse" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all">
+                <Link to="/Rbse" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all" >
                   RBSE
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
@@ -288,7 +288,7 @@ const Header = ({ isVisible }) => {
 
               {/* CAREER */}
               <li className={`transition-all duration-500 delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                <Link to="/career" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all">
+                <Link to="/career" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all"   onClick={() => setIsMenuOpen(false)}>
                   CAREER
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
@@ -296,7 +296,7 @@ const Header = ({ isVisible }) => {
 
               {/* About Us */}
               <li className={`transition-all duration-500 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                <Link to="/About" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all">
+                <Link to="/About" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all"   onClick={() => setIsMenuOpen(false)}>
                   About Us
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
@@ -304,7 +304,7 @@ const Header = ({ isVisible }) => {
 
               {/* Contact Us */}
               <li className={`transition-all duration-500 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                <Link to="/contact" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all">
+                <Link to="/contact" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all"   onClick={() => setIsMenuOpen(false)}>
                   CONTACT US
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
@@ -312,7 +312,7 @@ const Header = ({ isVisible }) => {
 
               {/* Admission with Dropdown */}
               <li className={`dropdown-parent transition-all duration-500 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                <Link to="/admissonpage" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all">
+                <Link to="/admissonpage" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all"   >
                   Admission
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </Link>

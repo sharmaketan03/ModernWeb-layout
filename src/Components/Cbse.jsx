@@ -1,5 +1,6 @@
 import React from 'react';
 import Cbsesec from "../assets/rishi2.jpg"
+import '../App.css'
 const Cbse = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans leading-relaxed">

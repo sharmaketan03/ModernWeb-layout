@@ -29,7 +29,8 @@ const router = createBrowserRouter([
         {path:"admissonpage",element:<AdmissionPage/>},
          {path:"gallery",element:<GalleryPage/>},
             {path:"cbseResult",element:<CbseResultPage/>},
-              {path:"RbseResult",element:<RbseResultPage/>}
+              {path:"RbseResult",element:<RbseResultPage/>},
+              {path:'*' ,element:<RishiSchoolHomepage/>}
          
     ],
   },

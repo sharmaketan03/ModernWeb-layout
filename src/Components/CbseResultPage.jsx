@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SearchResult from './SearchResult';
 import SearchResultCbse from './SearchResultCbse';
-
+import '../App.css'
 const ResultsPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedYear, setSelectedYear] = useState('2024');
