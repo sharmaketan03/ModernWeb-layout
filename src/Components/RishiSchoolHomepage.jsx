@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import frontimg from "../assets/school-1.jpg"
+import frontimg from "../assets/HomePage-2.jpeg"
 import Logo from "../assets/logo.jpeg"
 import WelcomeSection from './WelcomeSection';
 import AcademicsSection from './AcademicsSection';

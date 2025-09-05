@@ -257,7 +257,7 @@ const Header = ({ isVisible }) => {
               {/* CBSE CORNER with Dropdown */}
               <li className={`dropdown-parent transition-all duration-500 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
                 <Link to="/cbse" className="block px-3 py-2 font-bold text-[#010101] hover:text-blue-600 hover:scale-105 hover:-translate-y-1 relative group transition-all">
-                  CBSE CORNER
+                  CBSE 
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
                 {/* Desktop Dropdown */}

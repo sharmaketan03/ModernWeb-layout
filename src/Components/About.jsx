@@ -1,8 +1,10 @@
 import { Eye, Target, Star, User, Award, Briefcase } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from "framer-motion";
-import Director from "../assets/Director.jpeg"
+import Director from "../assets/Director.png"
 import principal from "../assets/Principal.jpeg"
+import HomePage from "../assets/HomePage-2.jpeg"
+import HomePage1 from "../assets/HomePage-1.jpeg"
 // import DeepakImg from "../assets/deepak.jpg";
 // import VaibhavImg from "../assets/vaibhav.jpg";
 // import KavitaImg from "../assets/kavita.jpg";
@@ -49,7 +51,7 @@ export default function RishiSchoolContent() {
           </div>
           <div className="hidden md:block">
             <img 
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              src={HomePage}
               alt="School Building" 
               className="w-96 h-48 object-cover rounded-lg shadow-lg"
             />
@@ -204,12 +206,12 @@ export default function RishiSchoolContent() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <img 
-              src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-              alt="Students in classroom" 
+              src={HomePage}
+              alt="Rishi Galav Image" 
               className="w-full h-48 object-cover rounded-lg shadow-md hover:shadow-lg transition"
             />
             <img 
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+              src={HomePage1} 
               alt="School library" 
               className="w-full h-48 object-cover rounded-lg shadow-md hover:shadow-lg transition"
             />
